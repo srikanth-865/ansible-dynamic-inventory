@@ -3,4 +3,8 @@ plugin: amazon.aws.aws_ec2
 regions:
   - us-east-1
 hostnames:
-- public-ip-address
+- private-ip-address
+
+filters:
+ tagname: frontend
+ instance-state-name: running
