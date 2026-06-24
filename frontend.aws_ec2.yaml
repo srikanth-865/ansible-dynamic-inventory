@@ -3,7 +3,7 @@ plugin: amazon.aws.aws_ec2
 regions:
   - us-east-1
 hostnames:
-  - private-ip-address
+- private-ip-address
 
 filters:
   tag:Name: frontend
