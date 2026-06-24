@@ -6,5 +6,5 @@ hostnames:
 - private-ip-address
 
 filters:
- tagname: frontend
- instance-state-name: running
+ tag:name: frontend
+ instance-state-name : running
