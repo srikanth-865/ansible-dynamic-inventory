@@ -10,5 +10,5 @@ filters:
   instance-state-name: running
 
 keyed_groups:
-  - key: ec2_tag.name
+  - key: tags.name
     separator: ''
