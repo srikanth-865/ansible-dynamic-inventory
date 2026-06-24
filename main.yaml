@@ -1,6 +1,7 @@
 - name: configure frontend server by dynamic inventory
   hosts: frontend
   become: yes
+  serial: 2
   tasks:
   - name: ping
     ping:
