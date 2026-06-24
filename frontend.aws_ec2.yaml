@@ -4,11 +4,11 @@ regions:
   - us-east-1
 hostnames:
   - private-ip-address
-
+# we get only running instances with tags as frontend instances name:
 filters:
   tag:Name: frontend
   instance-state-name: running
-
+# its our group as aws give default but if we want know our own purpose
 keyed_groups:
   - key: tags.Name
     separator: ''
